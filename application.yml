@@ -1,45 +1,31 @@
-server:
-  port: 38080
 spring:
   profiles:
-    active: dev
+    active: sit
 ---
 spring:
-  profiles: prod
+  profiles: sit
+  application:
+    name: ms-consumer-sit
 server:
-  port: 8888
+  port: 38080
 ---
 spring:
   profiles: dev
-server:
-  port: 38080
----
-spring:
-  profiles: uat
+  application:
+    name: ms-consumer-dev
 server:
   port: 28080
 ---
 spring:
-  profiles: prd
+  profiles: uat
+  application:
+    name: ms-consumer-uat
 server:
   port: 18080
 ---
-boy:
-  name: 张三
-  age: 23
-  pets: [cat, dog, pig]
-  birthday: 1992/02/07
-  hobbies:
-    -抽烟
-    -喝酒
-    -烫头
-  girlFriends:
-    {girlFriend1: '古力娜扎', girlFriend2: '迪丽热巴', girlFriend3: '玛尔扎哈'}
-  girl:
-    name: 小芳
-    age: 18
----
-girl:
-  name: 小芳
-  age: 18
-  address: 北京
+spring:
+  profiles: prd
+  application:
+    name: ms-consumer-prd
+server:
+  port: 8080
