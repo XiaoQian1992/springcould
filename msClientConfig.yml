@@ -1,1 +1,31 @@
-
+spring:
+  profiles:
+    active: sit
+---
+spring:
+  profiles: sit
+  application:
+    name: ms-consumer-sit
+server:
+  port: 38080
+---
+spring:
+  profiles: dev
+  application:
+    name: ms-consumer-dev
+server:
+  port: 28080
+---
+spring:
+  profiles: uat
+  application:
+    name: ms-consumer-uat
+server:
+  port: 18080
+---
+spring:
+  profiles: prd
+  application:
+    name: ms-consumer-prd
+server:
+  port: 8080
