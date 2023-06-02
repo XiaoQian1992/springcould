@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: sit
+busi:
+  ops: N
 ---
 spring:
   profiles: sit
