@@ -23,7 +23,7 @@ spring:
       useGlobalDataSourceStat: true
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 busi:
-  ops: Y  
+  ops: N  
 ---
 spring:
   profiles: sit
